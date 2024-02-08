@@ -44,6 +44,11 @@ body {
   margin: 0;
   color: #1b1b1b;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ---------------Header ------------*/
 header {
   display: flex;
@@ -548,12 +553,12 @@ color: #666;
 .exhibitions-overview {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px; /* Adjust the gap as needed */
+  gap: 5px; 
 }
 
 .column {
   flex: 1;
-  max-width: 50%; /* Two columns */
+  max-width: 50%; 
 }
 
 .image-link {
@@ -564,7 +569,7 @@ color: #666;
 
 .image-link img {
   width: 100%;
-  height: 100%; /* Maintain aspect ratio */
+  height: 100%; 
   display: block;
 }
 
@@ -637,13 +642,12 @@ color: #666;
 
 /* --------Events ---------------- */
 .events-content img {
-  max-width: 400px;
+  max-width: 90%;
 }
 
 .events-content {
   margin-top: 20px !important;
 }
-
 
 .events {
   display: flex;
@@ -659,34 +663,81 @@ flex-direction: row;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.left-side,
 .right-side-events {
   flex: 1;
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-}
-
-.left-side {
-  background-color: #D9D9D9;
-  color: #333;
-  padding: 15px;
-  flex-direction: column;
-  text-align: left;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-y: auto;
-}
-
-.right-side-events {
   background-size: cover;
   background-position: center;
   background-color: #D9D9D9;
+  padding: 20px;
+}
+
+
+/*------------ Cosmology ------------ */
+
+.exhibition-main-image {
+  position: relative; /* Establishes a positioning context for absolute positioning inside */
+  display: inline-block; /* Or 'block', depending on your layout needs */
+}
+
+.exhibition-main-image h1 {
+  position: absolute; /* Positions the h1 absolutely within its parent */
+  top: 30%; /* Adjust these values as needed */
+  left: 0; /* Adjust these values as needed */
+  color: white; /* Makes the text color white or any color that contrasts with your image */
+  margin: 0; /* Removes the default margin from the h1 */
+  padding: 10px; /* Adds some padding around the text */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background for better readability */
+  width: 100%; /* Ensures the h1 covers the full width of its parent */
+  text-align: center; /* Centers the text */
+}
+
+.exhibition-main-image img {
+  display: block; /* Removes bottom margin/gap caused by inline display */
+  width: 100%; /* Ensures the image fills the container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.exhibition-main-text {
+background-color: #D9D9D9;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.exhibition-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: repeat(2, 1fr); /* Creates two rows of equal height */
+    gap: 10px; /* Optional: adds space between grid items */
+    width: 100%; /* Adjust based on your layout needs */
+    max-width: 1000px; /* Adjust to control the overall size of the grid */
+    margin: auto; /* Centers the grid container if desired */
+    margin-bottom: 20px;
+}
+
+.exhibition-main-text, .exhibition-container img {
+    width: 100%; /* Ensures content fills its grid area */
+    height: auto; /* For images, maintains aspect ratio */
+    object-fit: cover; /* For images, ensures they cover the grid area without stretching */
+}
+.exhibition-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.exhibition-main-text p {
+  margin-bottom: 20px; /* Adds space below each paragraph */
+}
+.exhibition-main-text h2 {
+  margin-bottom: 20px; /* Adds space below each paragraph */
 }
 
 
@@ -748,10 +799,10 @@ flex-direction: row;
       padding: 10px;
   }
   h2 {
-      font-size: 20px;
+      font-size: 30px;
   }
   h3 {
-      font-size: 10px;
+      font-size: 25px;
   }
   .info-left h3, .info-right h3, .info-right p {
       font-size: 20px;
@@ -770,6 +821,14 @@ flex-direction: row;
       width: 60%;
   }
 
+  .plan-your-visit-content img {
+    max-width: 90%;
+  }
+
+  .events {
+    flex-direction: column;
+}
+
   .exhibitions-overview {
         flex-direction: column; /* Stack the children vertically */
   }
@@ -783,7 +842,13 @@ flex-direction: row;
 .image-text {
   font-size: 30px;
   }
+
+.exhibition-container {
+  display: flex;
+  flex-direction: column;
 }
+}
+
 @media screen and (max-width: 800px) {
   .split-box-events {
     min-height: auto;
