@@ -48,6 +48,7 @@ header {
   justify-content: center;
   background-image: url("../images/Header.JPG");
   background-size: cover;
+  background-color: #1b1b1b;
   background-position: center;
   height: 300px;
   padding: 20px;
