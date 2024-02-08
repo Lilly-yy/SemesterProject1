@@ -24,14 +24,15 @@ h1 {
   font-family: 'roboto';
   color: #FF9966;
   font-size: 30px;
-  padding: 50px;
+  padding: 10px;
   letter-spacing: 3px;
   text-decoration: none;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 h2 {
-  font-size: 40px;
+  font-size: 24px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  padding: 5px;
 }
 h3 {
   font-size: 36px;
@@ -127,8 +128,8 @@ footer {
 .menu {
   display: none;
   position: absolute;
-  right: 10px;
-  top: 70%;
+  right: 60px;
+  top: 75%;
   transform: translateY(-50%);
   min-width: 150px;
   z-index: 1;
@@ -143,6 +144,7 @@ footer {
   list-style-type: none;
   padding: 10px 20px;
   margin: 0;
+  font-size: 24px;
 }
 .menu li {
   border-bottom: 1px solid #1b1b1b;
@@ -273,7 +275,7 @@ color: #e47741;
 /* --------Upcoming events ---------------- */
 .section-separator {
   font-size: 30px;
-  background-color: #1b1b1b;
+  background-color: #333131;
   color: #FF9966;
   text-align: center;
   align-items: center;
@@ -700,10 +702,12 @@ flex-direction: row;
       padding: 10px;
       width: 100%;
       right: 0px;
-      top: 95%;
+      top: 125%;
   }
   .menu ul li {
-line-height: 1.8;
+      line-height: 2.1;
+      padding-top: 40px;
+      font-size: 20px;
   }
   header {
       height: auto;
