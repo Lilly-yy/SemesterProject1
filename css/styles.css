@@ -384,11 +384,15 @@ color: #666;
   color: #333;
   padding: 15px;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
+}
+
+.left-side p {
+  margin-bottom: 10px;
 }
 
 .right-side {
@@ -630,7 +634,7 @@ color: #666;
 }
 
 #amenities {
-  text-align: center; /* Center the text for the entire amenities section */
+  text-align: center; 
 }
 
 #amenities ul, #tips ul {
@@ -680,26 +684,26 @@ flex-direction: row;
 /*------------ Cosmology ------------ */
 
 .exhibition-main-image {
-  position: relative; /* Establishes a positioning context for absolute positioning inside */
-  display: inline-block; /* Or 'block', depending on your layout needs */
+  position: relative; 
+  display: inline-block; 
 }
 
 .exhibition-main-image h1 {
-  position: absolute; /* Positions the h1 absolutely within its parent */
-  top: 30%; /* Adjust these values as needed */
-  left: 0; /* Adjust these values as needed */
-  color: white; /* Makes the text color white or any color that contrasts with your image */
-  margin: 0; /* Removes the default margin from the h1 */
-  padding: 10px; /* Adds some padding around the text */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background for better readability */
-  width: 100%; /* Ensures the h1 covers the full width of its parent */
-  text-align: center; /* Centers the text */
+  position: absolute; 
+  top: 30%; 
+  left: 0; 
+  color: white; 
+  margin: 0; 
+  padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%; 
+  text-align: center; 
 }
 
 .exhibition-main-image img {
-  display: block; /* Removes bottom margin/gap caused by inline display */
-  width: 100%; /* Ensures the image fills the container */
-  height: auto; /* Maintains aspect ratio */
+  display: block; 
+  width: 100%; 
+  height: auto; 
 }
 
 .exhibition-main-text {
@@ -714,19 +718,19 @@ text-align: center;
 
 .exhibition-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
-    grid-template-rows: repeat(2, 1fr); /* Creates two rows of equal height */
-    gap: 10px; /* Optional: adds space between grid items */
-    width: 100%; /* Adjust based on your layout needs */
-    max-width: 1000px; /* Adjust to control the overall size of the grid */
-    margin: auto; /* Centers the grid container if desired */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px; 
+    width: 100%; 
+    max-width: 1000px; 
+    margin: auto; 
     margin-bottom: 20px;
 }
 
 .exhibition-main-text, .exhibition-container img {
-    width: 100%; /* Ensures content fills its grid area */
-    height: auto; /* For images, maintains aspect ratio */
-    object-fit: cover; /* For images, ensures they cover the grid area without stretching */
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
 }
 .exhibition-container img {
   width: 100%;
@@ -734,17 +738,11 @@ text-align: center;
   object-fit: cover;
 }
 .exhibition-main-text p {
-  margin-bottom: 20px; /* Adds space below each paragraph */
+  margin-bottom: 20px; 
 }
 .exhibition-main-text h2 {
-  margin-bottom: 20px; /* Adds space below each paragraph */
+  margin-bottom: 20px; 
 }
-
-
-
-
-
-
 
 
 /* --------Adjustment for mobile devices ---------------- */
@@ -827,26 +825,26 @@ text-align: center;
 
   .events {
     flex-direction: column;
-}
+  }
 
   .exhibitions-overview {
-        flex-direction: column; /* Stack the children vertically */
+        flex-direction: column; 
   }
 
   .column {
-        max-width: 100%; /* Each column takes the full width */
+        max-width: 100%; 
   }
   .image-link {
       height: auto;
   }
-.image-text {
+  .image-text {
   font-size: 30px;
   }
 
-.exhibition-container {
+  .exhibition-container {
   display: flex;
   flex-direction: column;
-}
+  }
 }
 
 @media screen and (max-width: 800px) {
