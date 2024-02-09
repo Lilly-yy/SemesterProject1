@@ -25,15 +25,14 @@
 h1 {
   font-family: 'roboto';
   color: #FF9966;
-  font-size: 30px;
+  font-size: 40px;
   padding: 10px;
   letter-spacing: 3px;
   text-decoration: none;
   text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.9);
 }
 h2 {
-  font-size: 24px;
-  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.9);
+  font-size: 30px;
   padding: 5px;
 }
 h3 {
@@ -365,13 +364,23 @@ color: #666;
 
 /* --------About us ---------------- */
 
+.aboutus-content {
+  margin: 20px auto;
+}
+
+.aboutus-content .section-separator {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
 .split-box {
   display: flex;
-  border-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
   overflow: hidden;
   width: 100%;
   height: auto;
-  margin-top: 30px;
+
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -423,12 +432,23 @@ color: #666;
   }
 }
 /* Contact us */
+
+
 .contact-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   width: 100%;
   gap: 20px;
+}
+
+.contact-form-heading {
+  color: #FF9966; 
+  background-color: #333131;
+  font-size: 30px;
+  padding: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .split-box-hori {
@@ -504,6 +524,7 @@ color: #666;
   .contact-container {
     flex-direction: column;
     align-items: center;
+    gap: 0px;
   }
 }
 
@@ -516,13 +537,8 @@ color: #666;
   margin-left: 10%;
 }
 
-.contact-form-heading {
-  color: #FF9966; 
-  font-size: 30px;
-  padding: 50px;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
+
+
 .contact-form input,
 .contact-form textarea {
   display: block;
@@ -546,16 +562,17 @@ color: #666;
 }
 
 .contact-form input[type="submit"] {
-  background-color: #9137db;
-  color: #fff;
+  background-color: #FF9966;
+  color: #0c0c0c;
   padding: 10px 15px;
+  font-size: 18px;
   border: none;
   border-radius: 4%;
   cursor: pointer;
 }
 
 .contact-form input[type="submit"]:hover {
-  background-color: #8B00FF;
+  background-color: #f08a57;
 }
 
 .contact-form label {
@@ -567,6 +584,11 @@ color: #666;
 .exhibitions-content {
   padding-top: 20px; 
 
+}
+
+.exhibitions-content .section-separator {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
 }
 
 .exhibitions-overview {
@@ -614,18 +636,17 @@ color: #666;
   margin: 20px auto;
 }
 
+.plan-your-visit-content .section-separator {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
 .plan-your-visit-content section {
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
-.plan-your-visit-content h1 {
-  font-size: 40px;
-  text-align: center;
-  }
-
 .plan-your-visit-content h2 {
-  font-size: 36px;
   margin-bottom: 20px;
 }
 .plan-your-visit-content h3 {
@@ -806,12 +827,12 @@ text-align: center;
   }
 
   h1 {
-      font-size: 24px;
+      font-size: 30px;
       letter-spacing: 0px;
       padding: 10px;
   }
   h2 {
-      font-size: 30px;
+      font-size: 25;
   }
   h3 {
       font-size: 25px;
